@@ -11,6 +11,7 @@ namespace Lists
         Node<T> start = null;
         Node<T> end = null;
 
+        //Overriding the ToString for My list 
         public override string ToString()
         {
             Node<T> tmp = start;
@@ -63,6 +64,7 @@ namespace Lists
             return default(T);
         }
 
+        //Append to the end of the dual bunded list
         public void Append(T val)
         {
             //if ((start == end) && (start == null))
@@ -80,6 +82,7 @@ namespace Lists
             }
         }
 
+        //Remove the last Node from the list, still save the last Node for furure using if needed
         public bool RemoveFromEnd(out T tmpData)
         {
             if (end == null)
