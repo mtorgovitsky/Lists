@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="MyLinkedList.cs" />
+    <Compile Include="MyStackClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -57,6 +57,15 @@ namespace Lists
             Book bTmp;
             cBook.RemoveFromEnd(out bTmp);
             Console.WriteLine(cBook);
+
+            MyStackClass<string> stkStr = new MyStackClass<string>();
+            bool bCheck = stkStr.IsEmpty();
+            bCheck = stkStr.Push("aaa");
+            bCheck = stkStr.Push("bbb");
+            bCheck = stkStr.Push("ccc");
+            string sCheck;
+            bCheck = stkStr.Pop(out sCheck);
+            bCheck = stkStr.IsEmpty();
         }
     }
 }

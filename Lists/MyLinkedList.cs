@@ -11,6 +11,11 @@ namespace Lists
         Node<T> start = null;
         Node<T> end = null;
 
+        public bool IsEmpty()
+        {
+            return start == null;
+        }
+
         //Overriding the ToString for My list 
         public override string ToString()
         {
@@ -131,6 +136,7 @@ namespace Lists
             {
                 end = n;
             }
+
         }
 
         public void PrintAll()
